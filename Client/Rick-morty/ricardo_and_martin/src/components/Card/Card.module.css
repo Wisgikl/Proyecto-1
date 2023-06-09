@@ -1,0 +1,64 @@
+.Contenedor{
+    position: relative;
+    width: auto;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 5%;
+    padding: 15px;
+    border: none;
+    top: 10px;
+    left: 2vw;
+    
+    -webkit-box-shadow: 9px 13px 30px -8px rgba(19,240,240,1);
+-moz-box-shadow: 9px 13px 30px -8px rgba(19,240,240,1);
+box-shadow: 9px 13px 30px -8px rgba(19,240,240,1);
+}
+.Contenedor:hover{
+    left: 3.7vh;
+    overflow: visible;
+    z-index: 100;
+    
+    backdrop-filter: blur(2px);
+    border: solid 3px rgba(40,37,37,0.856);
+    transform: scale(1.03);
+    transition:transform 0.2s ease-in-out;
+}
+
+.like{
+    border-radius: 15%;
+    position: relative;
+    left: 88%;
+    
+}
+
+.img {
+    border-radius: 25px;
+    height: 28vh;
+    width: 14vw;
+}
+
+.cerrar {
+    background-color: transparent;
+    position: relative;
+    left: 40%;
+    border-radius: 15%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    
+}
+
+.cerrar:hover {
+    background-color: #555555; /* Green */
+    color: white;
+}
+
+.subrayado{
+    text-decoration: none;
+}
+
+.Contenedor h5{
+    color:rgb(255, 10, 214);
+}

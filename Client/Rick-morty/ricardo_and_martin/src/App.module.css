@@ -1,0 +1,11 @@
+
+body{
+    background-image: url('./assets/imagen/61de2ba956418acd9ab454ceca15bbb2.jpg');
+    background-size: cover;
+   width: 100%;
+   height: 100;
+}
+
+.about{
+    text-decoration: none;
+}
