@@ -3,7 +3,7 @@ const server = express();
 const PORT = 3001
 const morgan = require('morgan');
 const router = require('./Routes/index')
-
+const { conn } = require('./DB_connection');
 
 server.use(express.json());
 server.use(morgan('dev'));
@@ -28,7 +28,8 @@ server.use('/rickandmorty', router );
 
 
 
+conn.sync({force:true}).then(()=>{
+   server.listen(PORT, ()=> console.log(`Listening on port: ${PORT}`))
 
+})
 
-
-server.listen(PORT, ()=> console.log(`Listening on port: ${PORT}`))
